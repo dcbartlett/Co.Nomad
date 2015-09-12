@@ -7,5 +7,4 @@ plugins/
 
 *.DS_Store
 
-css/ionic.app.css
-css/ionic.app.min.css
+www/css
