@@ -17,14 +17,10 @@ $dark:                            #444 !default;
 
 @import "conomad/variables";
 
-// TODO: Why are you including this here and letting ionic override things?
-@import "conomad/conomad.scss";  
-
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-
-// TODO: You should be adding custom things below Ionic down here.
+@import "conomad/conomad.scss";
