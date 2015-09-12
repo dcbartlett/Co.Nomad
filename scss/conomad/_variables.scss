@@ -1,2 +1,38 @@
-/*         Colors         */
-$stable:                          #1DC5A7 !default;
+// Colors
+$primary:			#07BE9C;
+$secondary:			#64659E;
+$white:				#fff;
+$black:				#333;
+
+$light:                        	  $white !default;
+$stable:                          $primary !default;
+$positive:                        $primary !default;
+$calm:                            $primary !default;
+$balanced:                        $primary !default;
+$energized:                       $primary !default;
+$assertive:                       $primary !default;
+$royal:                           $primary !default;
+$dark:                            $black !default;
+
+// Tabs
+
+.tab-item {
+	color: $primary;
+	border-color: $primary !important;
+}
+
+ion-tabs.tabs-color-active-positive {
+	&.tabs-top {
+		.tab-item.tab-item-active {
+			color: $primary;
+			border-color: $primary;
+		}
+	}
+	&.tabs-bottom {
+		.tab-item.tab-item-active {
+			color: $white;
+			border-color: $white;
+		}
+	}
+}
+
