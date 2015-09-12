@@ -1,4 +1,5 @@
 {
-  "name": "src",
-  "app_id": ""
+  "name": "Co.NoMad",
+  "app_id": "f05b0cf5",
+  "gulpStartupTasks": ["sass", "watch"]
 }
