@@ -236,3 +236,12 @@ button.button-postive-icon {
 		} */
 	}
 }
+
+.checkin-form {
+	.item-select select {
+		max-width: 100%;
+		width: 100%;
+		left: 0;
+		direction: ltr;
+	}
+}

@@ -27,14 +27,17 @@ $dark:                            $white !default;
   color: $lightgrey !important;
   font-style: italic; 
   opacity: 1;
+  font-size: 16px !important;
 }
 *:-moz-placeholder {
   color: $lightgrey !important;
   font-style: italic; 
   opacity: 1;
+  font-size: 16px !important;
 }
 *:-ms-input-placeholder { /* IE10+ */
   color: $lightgrey !important;
   font-style: italic; 
   opacity: 1;
+  font-size: 16px !important;
 }

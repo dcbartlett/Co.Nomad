@@ -76,11 +76,13 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
+  $scope.chat = Chats.get(0);
+  $scope.chat2 = Chats.get(1);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, Chats) {
   $scope.settings = {
     enableFriends: true
   };
+  $scope.chat = Chats.get(0);
 });
