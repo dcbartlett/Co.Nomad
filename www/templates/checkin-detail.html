@@ -1,7 +1,11 @@
 <md-bottom-sheet>
-	<div>Image: {{checkin.image}}</div>
-	<div>Name: {{checkin.name}}</div>
-	<div>Location: {{checkin.location}}</div>
-	<div>Career: {{checkin.career}}</div>
-	<div>More: {{checkin.more}}</div>
+    <div class="item-remove-animate item-avatar" type="item-text-wrap">
+        <img ng-src="{{checkin.face}}">
+		<h2>{{checkin.name.first}} {{checkin.name.last}}</h2>
+		<h3>{{checkin.career}}</h3>
+		<h4>Currently at {{checkin.locationName}}</h4>
+    </div>
+    <div>
+		<p>{{checkin.more}}</p>
+    </div>
 </md-bottom-sheet>
