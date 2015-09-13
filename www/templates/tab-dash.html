@@ -1,5 +1,12 @@
 <ion-view view-title="Dashboard">
-  <ion-content class="map padding">
+  <ion-content class="map" scroll="false">
     <div id="map" data-tap-disabled="true"></div>
+    <div id="controls">
+    	{{test}}
+    	<div class="button-bar">
+		  <a class="button" ng-click="openCheckin()">Check In</a>
+		</div>
+    </div>
+    <div id="bottomSheet"></div>
   </ion-content>
 </ion-view>

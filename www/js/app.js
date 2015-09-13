@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'ionic.service.core', 'ionic.service.push', 'ionic.service.analytics', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'ionic.service.core', 'ionic.service.push', 'ionic.service.analytics', 'ngMaterial', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform, $ionicAnalytics) {
   $ionicPlatform.ready(function() {
@@ -36,7 +36,8 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'ionic.service.push', 
     .state('tab', {
     url: '/tab',
     abstract: true,
-    templateUrl: 'templates/tabs.html'
+    templateUrl: 'templates/tabs.html',
+    controller: 'TabCtrl'
   })
 
   // Each tab has its own nav history stack:

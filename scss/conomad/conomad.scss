@@ -24,12 +24,31 @@ ion-tabs.tabs-color-active-positive {
 	}
 }
 
-// Map
+// // Map
 ion-content.map {
-	padding: 0;
+	#bottomSheet {
+		md-backdrop {
+			display: none;
+			z-index: -1;
+		}
+		.md-scroll-mask {
+			z-index: -1 !important;
+		}
+	}
+
+	#controls {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+
+		.button {
+			background: $white;
+			color: $primary;
+		}
+	}
 }
 .scroll {
-    height: 100%;
+	height: 100%;
 }
  
 #map {
@@ -46,4 +65,12 @@ button.button-postive-icon {
 .checkbox-calm input:before, .checkbox-calm .checkbox-icon:before {
 	border-width: 2px;
 	border-color: $lightgrey;
+}
+
+.loading-container {
+	z-index: 1000;
+
+	.loading {
+		background: transparent;
+	}
 }

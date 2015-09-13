@@ -1,5 +1,51 @@
 angular.module('starter.services', [])
 
+.factory('Checkins', function () {
+  // Might use a resource here that returns a JSON array
+
+  var self = this;
+  // Some fake testing data
+  self.latitude = null;
+  self.longitude = null;
+  self.checkins = function() {
+    return [{
+      name: {
+        first: "Jane",
+        last: "Doe"
+      },
+      location: new google.maps.LatLng(this.latitude - .0005,this.longitude - .0005)
+    },
+    { 
+      name: {
+        first: "Jane",
+        last: "Doe"
+      },
+      location: new google.maps.LatLng(this.latitude - .0005,this.longitude + .0005)
+    },
+    { 
+      name: {
+        first: "Jane",
+        last: "Doe"
+      },
+      location: new google.maps.LatLng(this.latitude + .0005,this.longitude - .0005)
+    },
+    { 
+      name: {
+        first: "Jane",
+        last: "Doe"
+      },
+      location: new google.maps.LatLng(this.latitude + .0005,this.longitude + .0005)
+    }];
+  };
+
+  return {
+    all: function(latitude, longitude) {
+      self.latitude = latitude;
+      self.longitude = longitude;
+      return self.checkins();
+    }
+  };
+})
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
