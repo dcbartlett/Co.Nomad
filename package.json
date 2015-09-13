@@ -17,9 +17,7 @@
   "engines": {
     "node": "0.10.37"
   },
-  "preinstall": {
-    "npm install -g ionic"
-  },
+  "preinstall": "npm install -g ionic",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
