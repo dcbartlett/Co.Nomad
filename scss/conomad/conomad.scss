@@ -6,6 +6,10 @@
 	border-top: 0 !important;
 }
 
+.no-border {
+	border: 0 !important;
+}
+
 .bar.bar-stable {
 	border: 0;
 	.title, .button.button-clear {
@@ -157,3 +161,75 @@ button.button-postive-icon {
 /*.career, .connections, .account{
 	margin-top: 50px;
 }*/
+
+// Chat Detail
+
+.chat-left img, .chat-right img {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+
+.chat-left {
+	img { float: left; }
+	.message {
+		float: left;
+		text-align: left;
+		margin-left: 20px;
+		background: lighten($lightgrey,20%);
+		margin-top: 10px;
+		&.second, &.third {
+			display: block;
+			clear: both;
+			margin: -5px 0 0 84px;
+		}
+		&.third {
+			margin-top: 5px;
+		}
+	}
+}
+
+.chat-right {
+	img { float: right; }
+	padding: 0 16px;
+	.message {
+		float: right;
+		text-align: right;
+		margin-right: 20px;
+		background: lighten($primary,55%);
+		margin-top: 10px;
+		&.second {
+			display: block;
+			clear: both;
+			margin: -5px 83px 0 0;
+		}
+	}
+}
+
+.message {
+	padding: 12px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+
+}
+
+.chat-detail {
+	.item {
+		border: 0;
+	}
+}
+
+.response {
+	clear: both;
+	position: relative;
+	bottom: 0px;
+	background: red;
+	border-top: 1px solid $black;
+	input {
+		@include placeholder {
+		    font-style:italic;
+		    color: white;
+		    font-weight:100;
+		}
+	}
+}
