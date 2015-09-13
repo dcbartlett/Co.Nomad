@@ -1,1 +1,1 @@
-web: node_modules/ionic/bin/ionic serve --lab
+web: node_modules/ionic/bin/ionic serve -a -p $PORT --lab
