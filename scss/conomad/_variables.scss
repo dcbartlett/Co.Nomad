@@ -4,6 +4,7 @@ $secondary:			#64659E;
 $white:				#fff;
 $lightgrey:			#c4c4c4;
 $black:				#333;
+$red:				#A5000A;
 
 $light:                        	  $white !default;
 $stable:                          $primary !default;
@@ -11,6 +12,29 @@ $positive:                        $primary !default;
 $calm:                            $secondary !default;
 $balanced:                        $primary !default;
 $energized:                       $primary !default;
-$assertive:                       $primary !default;
+$assertive:                       $red !default;
 $royal:                           $primary !default;
 $dark:                            $white !default;
+
+/*@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}*/
+
+*::-webkit-input-placeholder {
+  color: $lightgrey !important;
+  font-style: italic; 
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: $lightgrey !important;
+  font-style: italic; 
+  opacity: 1;
+}
+*:-ms-input-placeholder { /* IE10+ */
+  color: $lightgrey !important;
+  font-style: italic; 
+  opacity: 1;
+}

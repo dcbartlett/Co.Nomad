@@ -1,23 +1,12 @@
-<ion-view view-title="Account">
-  <ion-content>
-    <ul class="list">
-
-	  <li class="item item-toggle">
-	     Visibility
-	     <label class="toggle toggle-calm">
-	       <input type="checkbox">
-	       <div class="track">
-	         <div class="handle"></div>
-	       </div>
-	     </label>
-	  </li>
-	  <li>
-	  	<div class="item item-button-right">
-	    	Career Type
-		  	<button class="button button-postive-icon">
-		      <i class="icon ion-ios-arrow-forward"></i>
-		    </button>
-		</div>
+<ion-view view-title="Profile">
+  <ion-content class="profile">
+    <ion-list>
+	  <ion-item type="item-text-wrap" class="item-remove-animate item-avatar no-top-border">
+		<img ng-src="">
+		<h2>Minerva Somebody</h2>
+		<p>Austin, TX</p>
+	  </ion-item>
+	  <ion-item class="no-padding">
 		<div class="item item-divider">
 		    Career Type
 		</div>
@@ -30,24 +19,95 @@
 		  </li>
 		  <li class="item item-checkbox">
 		     <label class="checkbox checkbox-calm">
-		       <input type="checkbox">
+		       <input type="checkbox" checked>
 		     </label>
 		     Designer
-		  </li>
-		 <li class="item item-checkbox">
-		     <label class="checkbox checkbox-calm">
-		       <input type="checkbox">
-		     </label>
-		     Business
 		  </li>
 		  <li class="item item-checkbox">
 		     <label class="checkbox checkbox-calm">
 		       <input type="checkbox">
 		     </label>
-		     Artist
+		     Writer
+		  </li>
+		  <li class="item item-checkbox">
+		     <label class="checkbox checkbox-calm">
+		       <input type="checkbox">
+		     </label>
+		     Musician
+		  </li>
+		  <li class="item item-checkbox">
+		     <label class="checkbox checkbox-calm">
+		       <input type="checkbox" checked>
+		     </label>
+		     Entrepreneur
 		  </li>
 		</ul>
-	  </li>
-	</ul>
+	  </ion-item>
+	  <ion-item class="no-padding no-top-border">
+		  <div class="item item-divider">
+			Connections
+		  </div>
+		  <div class="list">
+		  	  <div class="item item-social active item-button-left ">
+			    Facebook
+			    <button class="button button-social">
+			      <i class="icon ion-social-facebook"></i>
+			    </button>
+			    <span>Connected</span>
+			  </div>
+			  <div class="item item-toggle">
+			    Post on my behalf
+			     <label class="toggle toggle-calm">
+			       <input type="checkbox" checked>
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			  </div>
+			  <div class="item item-social inactive item-button-left">
+			    Twitter
+			    <button class="button button-social">
+			      <i class="icon ion-social-twitter"></i>
+			    </button>
+			  </div>
+			  <div class="item item-social active item-button-left">
+			    Google+
+			    <button class="button button-social">
+			      <i class="icon ion-social-googleplus"></i>
+			    </button>
+			    <span>Connected</span>
+			  </div>
+			  <div class="item item-toggle">
+			    Post on my behalf
+			     <label class="toggle toggle-calm">
+			       <input type="checkbox">
+			       <div class="track">
+			         <div class="handle"></div>
+			       </div>
+			     </label>
+			  </div>
+			  <div class="item item-social inactive item-button-left">
+			    LinkedIn
+			    <button class="button button-social">
+			      <i class="icon ion-social-linkedin"></i>
+			    </button>
+			  </div>
+			  <div class="item item-social inactive item-button-left">
+			    Github
+			    <button class="button button-social">
+			      <i class="icon ion-social-github"></i>
+			    </button>
+			  </div>
+		  </div>
+	  </ion-item>
+	  <ion-item class="no-top-border no-padding">
+	  	<div class="item item-divider">
+		    Account
+		</div>
+		<button class="button button-block button-assertive">
+		  Logout
+		</button>
+	  </ion-item>
+	</ion-list>
   </ion-content>
 </ion-view>

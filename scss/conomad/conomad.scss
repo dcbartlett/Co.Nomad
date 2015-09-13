@@ -1,3 +1,29 @@
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-top-border {
+	border-top: 0 !important;
+}
+
+.no-border {
+	border: 0 !important;
+}
+
+.bar.bar-stable {
+	border: 0;
+	.title, .button.button-clear {
+		color: $white;
+	}
+}
+.tab-nav {
+	border: 0;
+}
+
+.button {
+	border: 0;
+}
+
 // Tabs
 
 .tab-item {
@@ -72,5 +98,141 @@ button.button-postive-icon {
 
 	.loading {
 		background: transparent;
+	}
+}
+
+.button-checkin {
+	padding: 10px;
+	.button {
+		background: $secondary !important;
+		border: 0;
+		color: $white !important;
+	}
+}
+
+.button-social {
+	height: 28px;
+	width: 28px;
+	border-radius: 50%;
+	border: 0;
+	color: $white;
+	padding: 0;
+	text-align: center;
+	.icon {
+		width: 20px;
+		margin: 0 auto;
+	}
+	.ion-social-twitter:before {
+		font-size: 20px;
+	}
+}
+.list .item-button-left {
+	padding-left: 62px;
+}
+
+.item-social {
+	&.active {
+		background: $secondary;
+		color: white;
+		.button-social {
+			color: $secondary;
+			background: $white;
+		}
+	}
+	&.inactive {
+		background: $lightgrey;
+		color: white;
+		.button-social {
+			color: $lightgrey;
+			background: $white;
+		}
+	}
+	span {
+		font-weight: bold;
+		float: right;
+		padding-right: 5px;
+	}
+}
+
+.profile .button.button-assertive {
+	width: 90%;
+	margin: 20px auto;
+}
+/*.career, .connections, .account{
+	margin-top: 50px;
+}*/
+
+// Chat Detail
+
+.chat-left img, .chat-right img {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+
+.chat-left {
+	img { float: left; }
+	.message {
+		float: left;
+		text-align: left;
+		margin-left: 20px;
+		background: lighten($lightgrey,20%);
+		margin-top: 10px;
+		&.second, &.third {
+			display: block;
+			clear: both;
+			margin: -5px 0 0 84px;
+		}
+		&.third {
+			margin-top: 5px;
+		}
+	}
+}
+
+.chat-right {
+	img { float: right; }
+	padding: 0 16px;
+	.message {
+		float: right;
+		text-align: right;
+		margin-right: 20px;
+		background: lighten($primary,55%);
+		margin-top: 10px;
+		&.second {
+			display: block;
+			clear: both;
+			margin: -5px 83px 0 0;
+		}
+	}
+}
+
+.message {
+	padding: 12px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+
+}
+
+.chat-detail {
+	.item {
+		border: 0;
+	}
+}
+
+.response {
+	clear: both;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	border-top: 1px solid $lightgrey !important;
+	padding: 0 0 5px 10px;
+	input {
+		color: $black;
+		width: calc(100% - 10px);
+		/*@include placeholder {
+		    font-style: italic;
+		    color: red;
+		    opacity: 1;
+		} */
 	}
 }
