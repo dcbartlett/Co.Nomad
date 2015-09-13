@@ -2,37 +2,15 @@
 $primary:			#07BE9C;
 $secondary:			#64659E;
 $white:				#fff;
+$lightgrey:			#c4c4c4;
 $black:				#333;
 
 $light:                        	  $white !default;
 $stable:                          $primary !default;
 $positive:                        $primary !default;
-$calm:                            $primary !default;
+$calm:                            $secondary !default;
 $balanced:                        $primary !default;
 $energized:                       $primary !default;
 $assertive:                       $primary !default;
 $royal:                           $primary !default;
-$dark:                            $black !default;
-
-// Tabs
-
-.tab-item {
-	color: $primary;
-	border-color: $primary !important;
-}
-
-ion-tabs.tabs-color-active-positive {
-	&.tabs-top {
-		.tab-item.tab-item-active {
-			color: $primary;
-			border-color: $primary;
-		}
-	}
-	&.tabs-bottom {
-		.tab-item.tab-item-active {
-			color: $white;
-			border-color: $white;
-		}
-	}
-}
-
+$dark:                            $white !default;
