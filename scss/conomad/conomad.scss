@@ -221,15 +221,18 @@ button.button-postive-icon {
 
 .response {
 	clear: both;
-	position: relative;
+	position: absolute;
 	bottom: 0px;
-	background: red;
-	border-top: 1px solid $black;
+	width: 100%;
+	border-top: 1px solid $lightgrey !important;
+	padding: 0 0 5px 10px;
 	input {
-		@include placeholder {
-		    font-style:italic;
-		    color: white;
-		    font-weight:100;
-		}
+		color: $black;
+		width: calc(100% - 10px);
+		/*@include placeholder {
+		    font-style: italic;
+		    color: red;
+		    opacity: 1;
+		} */
 	}
 }

@@ -16,11 +16,25 @@ $assertive:                       $red !default;
 $royal:                           $primary !default;
 $dark:                            $white !default;
 
-
-
-@mixin placeholder {
+/*@mixin placeholder {
   ::-webkit-input-placeholder {@content}
   :-moz-placeholder           {@content}
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}  
+}*/
+
+*::-webkit-input-placeholder {
+  color: $lightgrey !important;
+  font-style: italic; 
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: $lightgrey !important;
+  font-style: italic; 
+  opacity: 1;
+}
+*:-ms-input-placeholder { /* IE10+ */
+  color: $lightgrey !important;
+  font-style: italic; 
+  opacity: 1;
 }
