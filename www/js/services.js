@@ -46,7 +46,7 @@ angular.module('starter.services', [])
         first: "Odin",
         last: ""
       },
-      location: new google.maps.LatLng(this.latitude + .0005,this.longitude + .0005),
+      location: new google.maps.LatLng(this.latitude - .0005,this.longitude - .0005),
       locationName: "Library on 6th",
       career: "Musician",
       face: "https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png",
