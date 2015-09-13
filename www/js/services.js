@@ -8,33 +8,49 @@ angular.module('starter.services', [])
   self.latitude = null;
   self.longitude = null;
   self.checkins = function() {
-    return [{
+    return [{ 
       name: {
-        first: "Jane",
-        last: "Doe"
+        first: "Minerva",
+        last: ""
       },
-      location: new google.maps.LatLng(this.latitude - .0005,this.longitude - .0005)
+      location: new google.maps.LatLng(this.latitude + .0005,this.longitude + .0005),
+      locationName: "Easy Tiger",
+      career: "Designer",
+      face: "https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png",
+      more: "This is something a little bit more about me."
     },
     { 
       name: {
-        first: "Jane",
-        last: "Doe"
+        first: "Tenjin",
+        last: ""
       },
-      location: new google.maps.LatLng(this.latitude - .0005,this.longitude + .0005)
+      location: new google.maps.LatLng(this.latitude - .0005,this.longitude + .0005),
+      locationName: "Texas State Capital",
+      career: "Artist",
+      face: "https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png",
+      more: "This is something a little bit more about me."
     },
     { 
       name: {
-        first: "Jane",
-        last: "Doe"
+        first: "Sophia",
+        last: ""
       },
-      location: new google.maps.LatLng(this.latitude + .0005,this.longitude - .0005)
+      location: new google.maps.LatLng(this.latitude + .0005,this.longitude - .0005),
+      locationName: "Omni Hotel",
+      career: "Writer",
+      face: "https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png",
+      more: "This is something a little bit more about me."
     },
     { 
       name: {
-        first: "Jane",
-        last: "Doe"
+        first: "Odin",
+        last: ""
       },
-      location: new google.maps.LatLng(this.latitude + .0005,this.longitude + .0005)
+      location: new google.maps.LatLng(this.latitude + .0005,this.longitude + .0005),
+      locationName: "Library on 6th",
+      career: "Musician",
+      face: "https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png",
+      more: "This is something a little bit more about me."
     }];
   };
 
@@ -51,31 +67,37 @@ angular.module('starter.services', [])
 
   // Some fake testing data
   var chats = [{
-    id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
-  }, {
-    id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
-  }, {
-    id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
-  }];
+      name: {
+        first: "Minerva",
+        last: ""
+      },
+      lastText: 'You on your way?',
+      face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    }, 
+    {
+      name: {
+        first: "Tenjin",
+        last: ""
+      },
+      lastText: 'Hey, it\'s me',
+      face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    }, 
+    {
+      name: {
+        first: "Sophia",
+        last: ""
+      },
+      lastText: 'I should buy a boat',
+      face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+    },
+    { 
+      name: {
+        first: "Odin",
+        last: ""
+      },
+      lastText: 'Look at my mukluks!',
+      face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
+    }];
 
   return {
     all: function() {
